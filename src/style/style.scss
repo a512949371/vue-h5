@@ -1,0 +1,586 @@
+html,body{
+    font-size: 62.5%;
+    min-height: 100%;
+    max-width: 750px;
+    margin: auto;
+    font-family: "微软雅黑";
+    background-color: #f5f5f5;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+img{
+    width: 100%;
+    display:block;
+    pointer-events: none;
+}
+.flex-box{
+    display: flex;
+}
+.bge5{
+    background-color: #e5e5e5;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.pt30{
+    padding-top: 3rem;
+}
+.mt7{
+    margin-top: 0.7rem;
+}
+.mt10{
+    margin-top: 1rem;
+}
+.mt15{
+    margin-top: 1.5rem;
+}
+.mt20{
+    margin-top: 2rem;
+}
+.mt30{
+    margin-top: 3rem;
+}
+.pt10{
+    padding-top: 1rem;
+}
+.pt15{
+    padding-top: 1.5rem;
+}
+.pl10{
+    padding-left: 1rem;
+}
+.pl20{
+    padding-left: 2rem;
+}
+.pr10{
+    padding-right: 1rem;
+}
+.pr20{
+    padding-right: 2rem;
+}
+.pb15{
+    padding-bottom: 1.5rem;
+}
+.pb30{
+    padding-bottom: 3rem;
+}
+.pb60{
+    padding-bottom: 6rem;
+}
+.height{
+    min-height: 100%;
+}
+.font-20{
+    font-size: 2rem;
+    color: #ff4958;
+}
+.nodata{
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: #666;
+}
+input{
+    background-color: #f5f5f5;
+}
+textarea{
+    background-color: #f5f5f5;
+}
+//注册页面
+.register-box{
+    padding-left:1.5rem ;
+    padding-right: 1.5rem;
+    box-sizing: border-box;
+    .input-box{
+        box-sizing: border-box;
+        border-radius: 1rem;
+        border: 1px solid #e5e5e5;
+        padding:0.5rem 0 0.5rem 1rem ;
+        display: flex;
+        align-items:center;
+        .left{
+            width: 2rem;
+            padding: 0.5rem ;
+            img{
+                width: 50%;
+            }
+        }
+        .right{
+            flex:1;
+            padding: 0.5rem 0;
+            box-sizing: border-box;
+            input{
+                border: none;
+                border-left: 1px solid #e5e5e5;
+                line-height: 1.8rem;
+                width: 100%;
+                padding-left: 1rem;
+                box-sizing: border-box;
+                font-size: 1.4rem;
+                
+            }
+            input:focus{
+                outline: none;
+            }
+        }
+        .phone{
+            width: 8rem;
+            background-color: rgb(55,150,254);
+            border-radius: 0.7rem;
+            padding: 0.3rem 0;
+            color: #fff;
+            margin-right: 0.5rem;
+            font-size: 1.4rem;
+        }
+    }
+    .img{
+        width: 70%;
+        margin: auto;
+    }
+}
+//首页
+.index-box{
+    position: relative;
+    margin-top:0.5rem;
+    .desc{
+        position: absolute;
+        top: 30%;
+        text-align: left;
+        left: 2rem;
+        right: 0;
+        font-size: 1.2rem;
+        color: #FFF;
+    }
+    .balance{
+        position: absolute;
+        top: 40%;
+        text-align: left;
+        left: 2rem;
+        right: 0;
+        font-size: 4.5rem;
+        color: #FFF;
+    }
+    .cardnum{
+        position: absolute;
+        bottom: 1rem;
+        left: 2rem;
+        font-size: 1.3rem;
+        color: #FFF;
+        span{
+            padding-left: 0.5rem;
+        }
+    }
+    .tel{
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+        font-size: 1.3rem;
+        color: #FFF;
+        span{
+            padding-left: 0.5rem;
+        }
+    }
+}
+.money-box{
+    display: flex;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    align-items:center;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1rem solid #f5f5f5;
+    .left{
+        flex: 1;
+    }
+    .right{
+        flex: 1;
+        border-left: 1px solid #f5f5f5;
+    }
+    .price{
+        color: #30a0ff;
+        font-size: 2.1rem;
+    }
+    .dec{
+        color: #999;
+        font-size: 1.4rem;
+    }
+}
+.acttit{
+   .left{
+       flex: 1;
+       .blue-box{
+           width: 0.4rem;
+           height: 1.5rem;
+           background-color: #30a0ff;
+       }
+       .tit{
+           font-size: 1.5rem;
+           padding-left: 1rem;
+       }
+   }
+   .right{
+       width: 10rem;
+       text-align: right;
+       font-size: 1.4rem;
+       color: #969696;
+   } 
+}
+.compoun-box{
+    .compoun{
+        margin-top: 1rem;
+        padding: 1rem 1.5rem;
+        align-items: center;
+        .left{
+            flex:1 ;
+            .img{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .info{
+                flex: 1;
+                padding-left: 1.5rem;
+                text-align: left;
+                h3{
+                    font-size: 1.6rem;
+                    color: #323232;
+                }
+                .time{
+                    font-size: 1.1rem;
+                    color: #969696;
+                    padding: 0.5rem 0;
+                    width: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .dec{
+                    font-size: 1.1rem;
+                    color: #969696;
+                }
+            }
+        }
+        .right{
+            width: 7rem;
+            font-size: 2.4rem;
+            color: #fe4545;
+        }
+        .color-fff{
+            color: #FFF;
+        }
+    }
+}
+//个人中心
+.bge5{
+    background-color: #f5f5f5;
+}
+.my-box{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 2rem;
+    .user{
+        justify-content:space-between;
+        align-items: center;
+        padding:2.5rem 2rem ;
+        .user-name{
+            flex: 1;
+            font-size: 2.5rem;
+            text-align: left;
+            color: #323232;
+            padding-top: 0.7rem;
+            font-weight: bold;
+        }
+        .user-phone{
+            font-size:1.6rem ;
+            color: #323232;
+            text-align: left;
+            padding-top: 0.7rem;
+        }
+        .img{
+            width: 5rem;
+            height: 5rem;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+}
+.pro-box{
+    li{
+        padding: 1.5rem;
+        border-bottom: 1px solid #e5e5e5;
+        align-items: center;
+        font-size: 1.8rem;
+        a{
+          display: flex; 
+          align-items: center;
+        }
+        .left-icon{
+            width: 1.6rem;
+            text-align: center;
+        }
+        .center-content{
+            flex: 1;
+            text-align: left;
+            padding-left: 1rem;
+        }
+        .right-icon{
+            width: 0.8rem;
+            text-align: center;
+        }
+    }
+}
+//优惠券详情
+.shopname{
+    font-size: 1.7rem;
+    color: #323232;
+    text-align: left;
+}
+.shopadd{
+    font-size: 1.3rem;
+    color: #323232;
+    text-align: left;
+    line-height: 1.6rem;
+    .add-box{
+        flex: 1;
+        padding-right: 1rem;
+    }
+    .phone-box{
+        width: 4rem;
+    }
+}
+.rule-box{
+    font-size: 1.3rem;
+    color: #646464;
+    line-height: 1.6rem;
+    text-align: left;
+}
+//选择优惠券
+.tip-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    padding: 0.8rem 1rem;
+    font-size: 1.2rem;
+    color: #c75a49;
+    background-color: #ffefc4;
+    z-index: 9;
+}
+.compoun-box{
+    .selectcompoun{
+        margin-top: 1rem;
+        padding: 1rem 1.5rem;
+        align-items: center;
+        .left{
+            flex:1 ;
+            .img{
+                width: 6rem;
+                height: 6rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .info{
+                flex: 1;
+                padding-left: 1.5rem;
+                text-align: left;
+                h3{
+                    font-size: 1.6rem;
+                    color: #323232;
+                    font-weight: 100;
+                }
+                .num-box{
+                    .reduce{
+                        width: 2rem;
+                    }
+                    .num{
+                        width: 8rem;
+                        input{
+                            width: 100%;
+                            padding: 0.2rem 1rem;
+                            font-size: 2rem;
+                            text-align: center;
+                            box-sizing: border-box;
+                            border: none;
+                        }
+                        input:focus{
+                            outline: none;
+                        }
+                    }
+                    .add{
+                        width: 2rem;
+                    }
+                    .seating{
+                        flex: 1;
+                    }
+                }
+            }
+        }
+        .right{
+            width: 7rem;
+            font-size: 1.7rem;
+            color: #fe4545;
+        }
+        .color-fff{
+            color: #FFF;
+        }
+    }
+}
+.font-24{
+    font-size: 2.4rem;
+}
+.selectcompoun-bottom{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #494949;
+    height: 4.7rem;
+    z-index: 9999;
+    .info-box{
+        position: relative;
+        padding-left: 7rem;
+        .left-img{
+            position: absolute;
+            left: 1rem;
+            top: -1rem;
+            width: 5rem;
+        }
+        .center-info{
+            flex: 1;
+            text-align: left;
+            height: 4.7rem;
+            .price{
+                padding-top: 0.5rem;
+                font-size: 1.7rem;
+                color: #FFF;
+            }
+            .desc{
+                font-size: 1.1rem;
+                padding-top: 0.5rem;
+                color: #a8a8a8;
+            }
+        }
+        .right-btn{
+            width: 8rem;
+            font-size: 2rem;
+            line-height: 4.7rem;
+            color: #FFF;
+            background-color: #30a0ff;
+        }
+    }
+}
+//首页弹出框
+.index-fixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 997;
+    .shaw{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 998;
+    }
+    .content{
+        position: fixed;
+        top: calc(50% - 10rem);
+        left: 15%;
+        right:15% ;
+        padding: 0 1rem;
+        z-index: 999;
+        background-color: #FFF;
+        border-radius: 0.8rem;
+        .price-box{
+            font-size: 1.8rem;
+            color: #333;
+        }
+        .desc{
+            font-size: 1.2rem;
+            line-height: 1.6rem;
+        }
+        .btn{
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+@media screen and (min-width: 600px) {
+    .register-box{
+        .input-box{
+            .left{
+                width: 4rem;
+                padding: 1rem 0.5rem;
+            }
+            .right{
+                input{
+                   font-size: 2rem;
+                   line-height: 2.4rem; 
+                }
+            }
+            .phone{
+              padding: 1.5rem 0.5rem;
+            }
+        }
+    }
+    .index-box{
+        .balance{
+            top: 52%;
+            font-size: 3rem;
+        }
+        .cardnum{
+            font-size: 2rem; 
+            bottom: 3rem;
+            left: 3rem; 
+        }
+        .tel{
+            font-size: 3rem; 
+            bottom: 3rem;
+            right: 3rem; 
+        }
+    }
+    .my-box{
+        .user{
+            left: 40%;
+            .img{
+                width: 9rem;
+            }
+            .user-name{
+                font-size: 2.2rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px) {
+    .compoun-box{
+    .compoun{
+        .left{
+            .img{
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+            .info{
+                padding-left: 1rem;
+            }
+        }
+    }
+    }
+}
